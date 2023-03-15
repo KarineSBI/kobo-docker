@@ -5,7 +5,7 @@ version: '3'
 
 services:
   kobocat:
-    image: karinezhu/kobocat_test:v1
+    image: karinezhu/kobocat_test:sbi
     hostname: kobocat
     env_file:
       - ../kobo-env/envfile.txt
@@ -43,7 +43,7 @@ services:
           - kobocat.internal
 
   kpi:
-    image: karinezhu/kpi_test:v1
+    image: karinezhu/kpi_test:sbi
     hostname: kpi
     env_file:
       - ../kobo-env/envfile.txt
